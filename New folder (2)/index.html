@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>RGUKT</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="krishnaveni">
+	<meta name="keywords" content="IIITSKLM","home","branch">
+	<meta name="Description" content="content="Rajiv Gandhi University of Knowledge Technologies is a state university located in Etcherla, Srikakulam District, Andhra Pradesh, India.">
+	<!--meta code ends here-->
+	<!--intigration of our website to the social media platform-->
+	<!--meta tags for facebook-->
+	<meta property="og:url" content="http://rguktsklm.ac.in">
+	<meta property="og:url" type="website">
+	<meta property:"og:description" content="rajiv gandhi university of knowledge & technoogies srikakulam campus located in Etcherla srikakulam(dt)">
+	<!--fb metacode ends here-->
+	<!--twitter metacode starts-->
+	<meta name="twitter:card" content="summary">
+	<meta property="og:title" content="rguktsklm">
+	<!-- twitter metacode ends here-->
+	<!--Link section-->
+	<link rel="icon" type="text/css" href="log.jpg">
+    <link rel="stylesheet" type="text/css" href="website.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <style>
+        .left,.middle,.right{
+            width:33%;
+            height: 450px;
+            float:left;
+           
+
+        }
+        .left{
+            background-color:white;
+            background-image: linear-gradient(to top,#adff 0%,#343434 100%);
+            border:1px solid black;
+        }
+        .middle{
+            background-color: blue;
+    
+        }
+        .right{
+            background-color:black;
+            background-image: linear-gradient(to top,#adff 0%,#343434 100%);
+            border: 1px solid black;
+        }
+    </style>
+    </head>
+	<body>
+		<div class="img">
+			<img src="log.jpg" height="130px" width="180px" alt="rguktlogo" class="image">
+            <hr>
+            <ul>
+                <li class="links"><a href="#">HOME</a></li>
+                <li class="link"><a href="form_validation.html">EXAM</a></li>
+                <li class=link><a href="#">BRANCHES</a></li>
+                <li class=link><a href="#">CONCTACT US</a></li>
+                  
+             </ul>
+         </div>
+         <div class="container">
+            <div class="left">
+                   <center><button class="fil" type="button">FILTERING </button>
+                   <hr >
+                   <input type="text" class="search" id="filter" onkeyup="search()">
+                 <input type="button" class="search_btn" value="Search" onclick="search()"></center>
+                 <br>
+                  <ul>
+                    <br>
+                    <li class="row"> KRISHNAVENI</li>
+                    <br>
+                    <br>
+                    <li class="row"> GAYATHRI</li>
+                    <br>
+                    <br>
+                    <li class="row">THOTLI JYOTHI</li>
+                    <br>
+                    <br>
+                    <li class="row">GUDA NANDHINI</li>
+                    <br>
+                    <br>
+                    <li class="row">VARLA SIRI</li>
+                    <br>
+                    <br>
+                  </ul>
+
+                </div>
+            <div class="middle">
+                <img src="png1.png" class="pic">
+                <img src="abc.jpg" class="pic">
+                <img src="index.jpg" class="pic">
+            </div>
+            <div class="right">
+                <center><button class="fil" type="button"> NOTIFICATIONS</button>
+                <br>
+                <hr>
+                <br>
+                <a href="#" style="color: black" >STUDENTS REPORTING DATE</a>
+                <br>
+                <hr>
+                <br>
+                <a href="#" style="color: black" >EXAM RESULTS</a>
+                <hr>
+                <BR>
+                <a href="#" style="color: black" >MESS TIMINGS</a>
+                <hr>
+                <BR>
+                <a href="#" style="color: black" >CIRCULAR SEM REGISTRATION</a>
+                <hr>
+                <BR>
+                <a href="#" style="color: black" >REMEDIAL EXAMINATION RESULTS</a>
+                <br>
+                <hr>
+            </div>
+         </div> 
+       <!-- footer section starts here-->
+         <footer id="main-footer">
+            <p style="text-align: center;" class="foot">Copy right &copy;Website By krishnaveni</p>
+            <div class="foot">
+             <!-- hitwebcounter Code START -->
+             <a href="https://www.hitwebcounter.com" target="_blank">
+             <img src="https://hitwebcounter.com/counter/counter.php?page=8013779&style=0006&nbdigits=6&type=page&initCount=100000" title="Free Counter" Alt="web counter"   border="0" /></a>                                    
+             </div>
+
+            </footer>
+         
+       <script src="web.js"></script>
+       <script
+       function search(){
+        var text=document.getElementById("filter").value.toLowerCase();
+        var items=document.getElementsByClassName("li");
+        Array.from(items).forEach((item)=>{
+            itemvalue=item.firstChild.textContent;
+            if(itemvalue.toLowerCase().indexOf(text)!=-1){
+                item.style.display="block";
+            }
+            else{
+                item.style.display="none";
+            }
+        });
+        // alert(text)
+    }
+        </body>
+        <html>
